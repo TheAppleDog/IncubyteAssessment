@@ -84,3 +84,12 @@ def test_purchase_sweet_insufficient_stock(self):
     shop.add_sweet(sweet)
     with self.assertRaises(ValueError):
         shop.purchase_sweet(1001, 5)
+
+# RESTOCK SWEETS
+
+def test_restock_sweet(self):
+    shop = SweetShop()
+    sweet = Sweet(1001, "Kaju Katli", "Nut-Based", 50, 5)
+    shop.add_sweet(sweet)
+    shop.restock_sweet(1001, 10)
+    self.assertEqual(sweet.quantity, 15)

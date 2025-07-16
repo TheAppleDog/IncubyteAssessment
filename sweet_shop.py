@@ -53,3 +53,11 @@ def purchase_sweet(self, sweet_id, quantity):
                 return
             else:
                 raise ValueError("Not enough stock")
+
+# RESTOCKS SWEETS
+
+def restock_sweet(self, sweet_id, quantity):
+    for s in self.sweets:
+        if s.sweet_id == sweet_id:
+            s.quantity += quantity
+            return
