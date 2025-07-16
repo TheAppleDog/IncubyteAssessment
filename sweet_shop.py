@@ -42,3 +42,14 @@ def search_by_price_range(self, min_price, max_price):
 
 def sort_by_price(self):
     return sorted(self.sweets, key=lambda s: s.price)
+
+# PURCHASE SWEETS
+
+def purchase_sweet(self, sweet_id, quantity):
+    for s in self.sweets:
+        if s.sweet_id == sweet_id:
+            if s.quantity >= quantity:
+                s.quantity -= quantity
+                return
+            else:
+                raise ValueError("Not enough stock")

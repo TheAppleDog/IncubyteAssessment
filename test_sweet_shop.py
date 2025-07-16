@@ -66,3 +66,21 @@ def test_sort_by_price(self):
     shop.add_sweet(Sweet(1002, "B", "Candy", 10, 10))
     result = shop.sort_by_price()
     self.assertEqual(result[0].price, 10)
+
+#PURCHASE SWEETS
+
+def test_purchase_sweet_success(self):
+    shop = SweetShop()
+    sweet = Sweet(1001, "Kaju Katli", "Nut-Based", 50, 20)
+    shop.add_sweet(sweet)
+    shop.purchase_sweet(1001, 5)
+    self.assertEqual(sweet.quantity, 15)
+
+# NOT ENOUGH STOCK
+
+def test_purchase_sweet_insufficient_stock(self):
+    shop = SweetShop()
+    sweet = Sweet(1001, "Kaju Katli", "Nut-Based", 50, 3)
+    shop.add_sweet(sweet)
+    with self.assertRaises(ValueError):
+        shop.purchase_sweet(1001, 5)
