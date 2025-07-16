@@ -26,3 +26,14 @@ def delete_sweet(self, sweet_id):
 
 def view_sweets(self):
     return self.sweets
+
+#SEARCH SWEETS BY NAME, CATEGORY OR PRICE RANGE.
+
+def search_by_name(self, name):
+    return [s for s in self.sweets if name.lower() in s.name.lower()]
+
+def search_by_category(self, category):
+    return [s for s in self.sweets if category.lower() in s.category.lower()]
+
+def search_by_price_range(self, min_price, max_price):
+    return [s for s in self.sweets if min_price <= s.price <= max_price]
