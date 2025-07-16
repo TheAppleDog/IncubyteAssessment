@@ -23,3 +23,14 @@ def test_delete_sweet(self):
     shop.add_sweet(sweet)
     shop.delete_sweet(1001)
     self.assertNotIn(sweet, shop.sweets)
+
+#VIEW SWEETS
+
+def test_view_sweets(self):
+    shop = SweetShop()
+    sweet1 = Sweet(1001, "Kaju Katli", "Nut-Based", 50, 20)
+    sweet2 = Sweet(1002, "Gulab Jamun", "Milk-Based", 30, 50)
+    shop.add_sweet(sweet1)
+    shop.add_sweet(sweet2)
+    result = shop.view_sweets()
+    self.assertEqual(len(result), 2)
