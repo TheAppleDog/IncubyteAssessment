@@ -1,3 +1,5 @@
+#ADD SWEET
+
 class Sweet:
     def __init__(self, sweet_id, name, category, price, quantity):
         self.sweet_id = sweet_id
@@ -15,3 +17,7 @@ class SweetShop:
 
     def add_sweet(self, sweet):
         self.sweets.append(sweet)
+
+# DELETE SWEET
+def delete_sweet(self, sweet_id):
+    self.sweets = [s for s in self.sweets if s.sweet_id != sweet_id]
