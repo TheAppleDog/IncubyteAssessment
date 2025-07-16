@@ -57,3 +57,12 @@ def test_search_by_price_range(self):
     result = shop.search_by_price_range(5, 30)
     self.assertEqual(len(result), 1)
     self.assertEqual(result[0].name, "Gulab Jamun")
+
+# SORT SWEETS
+
+def test_sort_by_price(self):
+    shop = SweetShop()
+    shop.add_sweet(Sweet(1001, "A", "Candy", 30, 10))
+    shop.add_sweet(Sweet(1002, "B", "Candy", 10, 10))
+    result = shop.sort_by_price()
+    self.assertEqual(result[0].price, 10)

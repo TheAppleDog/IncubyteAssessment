@@ -37,3 +37,8 @@ def search_by_category(self, category):
 
 def search_by_price_range(self, min_price, max_price):
     return [s for s in self.sweets if min_price <= s.price <= max_price]
+
+# SORT SWEETS
+
+def sort_by_price(self):
+    return sorted(self.sweets, key=lambda s: s.price)
