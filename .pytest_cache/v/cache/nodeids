@@ -1,0 +1,12 @@
+[
+  "test_sweet_shop.py::TestSweetShop::test_add_sweet",
+  "test_sweet_shop.py::test_delete_sweet",
+  "test_sweet_shop.py::test_purchase_sweet_insufficient_stock",
+  "test_sweet_shop.py::test_purchase_sweet_success",
+  "test_sweet_shop.py::test_restock_sweet",
+  "test_sweet_shop.py::test_search_by_category",
+  "test_sweet_shop.py::test_search_by_name",
+  "test_sweet_shop.py::test_search_by_price_range",
+  "test_sweet_shop.py::test_sort_by_price",
+  "test_sweet_shop.py::test_view_sweets"
+]

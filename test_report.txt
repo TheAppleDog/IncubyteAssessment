@@ -1,0 +1,92 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.4, pytest-7.4.4, pluggy-1.0.0
+rootdir: D:\sweet_shop
+plugins: anyio-4.2.0
+collected 10 items
+
+test_sweet_shop.py .EEEEEEEEE                                            [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_delete_sweet _____________________
+file D:\sweet_shop\test_sweet_shop.py, line 20
+  def test_delete_sweet(self):
+E       fixture 'self' not found
+>       available fixtures: anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\sweet_shop\test_sweet_shop.py:20
+_____________________ ERROR at setup of test_view_sweets ______________________
+file D:\sweet_shop\test_sweet_shop.py, line 29
+  def test_view_sweets(self):
+E       fixture 'self' not found
+>       available fixtures: anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\sweet_shop\test_sweet_shop.py:29
+____________________ ERROR at setup of test_search_by_name ____________________
+file D:\sweet_shop\test_sweet_shop.py, line 40
+  def test_search_by_name(self):
+E       fixture 'self' not found
+>       available fixtures: anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\sweet_shop\test_sweet_shop.py:40
+__________________ ERROR at setup of test_search_by_category __________________
+file D:\sweet_shop\test_sweet_shop.py, line 46
+  def test_search_by_category(self):
+E       fixture 'self' not found
+>       available fixtures: anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\sweet_shop\test_sweet_shop.py:46
+________________ ERROR at setup of test_search_by_price_range _________________
+file D:\sweet_shop\test_sweet_shop.py, line 53
+  def test_search_by_price_range(self):
+E       fixture 'self' not found
+>       available fixtures: anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\sweet_shop\test_sweet_shop.py:53
+____________________ ERROR at setup of test_sort_by_price _____________________
+file D:\sweet_shop\test_sweet_shop.py, line 63
+  def test_sort_by_price(self):
+E       fixture 'self' not found
+>       available fixtures: anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\sweet_shop\test_sweet_shop.py:63
+________________ ERROR at setup of test_purchase_sweet_success ________________
+file D:\sweet_shop\test_sweet_shop.py, line 72
+  def test_purchase_sweet_success(self):
+E       fixture 'self' not found
+>       available fixtures: anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\sweet_shop\test_sweet_shop.py:72
+__________ ERROR at setup of test_purchase_sweet_insufficient_stock ___________
+file D:\sweet_shop\test_sweet_shop.py, line 81
+  def test_purchase_sweet_insufficient_stock(self):
+E       fixture 'self' not found
+>       available fixtures: anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\sweet_shop\test_sweet_shop.py:81
+____________________ ERROR at setup of test_restock_sweet _____________________
+file D:\sweet_shop\test_sweet_shop.py, line 90
+  def test_restock_sweet(self):
+E       fixture 'self' not found
+>       available fixtures: anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\sweet_shop\test_sweet_shop.py:90
+=========================== short test summary info ===========================
+ERROR test_sweet_shop.py::test_delete_sweet
+ERROR test_sweet_shop.py::test_view_sweets
+ERROR test_sweet_shop.py::test_search_by_name
+ERROR test_sweet_shop.py::test_search_by_category
+ERROR test_sweet_shop.py::test_search_by_price_range
+ERROR test_sweet_shop.py::test_sort_by_price
+ERROR test_sweet_shop.py::test_purchase_sweet_success
+ERROR test_sweet_shop.py::test_purchase_sweet_insufficient_stock
+ERROR test_sweet_shop.py::test_restock_sweet
+========================= 1 passed, 9 errors in 0.07s =========================
