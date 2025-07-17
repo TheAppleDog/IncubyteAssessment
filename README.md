@@ -39,3 +39,7 @@ cd sweet_shop
 • pytest
 
 • Git for version control
+
+## Test Report
+
+See `test_report.txt` for detailed pass/fail information from the test run.
